@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages/eventDriven.css" />
+    <link rel="stylesheet" href="css/pages/userInterface.css" />
+    <link rel="stylesheet" href="css/pages/timeline.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/tse3yiw.css">
+    <!-- Title of your web page -->
+    <title>iOS Development</title>
+
+</head>
+
+<body>
+<div class="welcome-screen" id="welcome_screen">
+    <div class="welcome-screen-text">
+        <span style="font-size: 60px; font-weight: bold">Welcome,</span>
+        <span>Through this interactive webpage I hope to interest anyone to look into iOS development; some coding knowledge would be preferred (primarily javascript)</span>
+    </div>
+    <button onclick="hideWelcomeScreen()">
+        Continue
+    </button>
+</div>
+
+<label class="hamburger-label">
+    <input type="checkbox" class="hamburger-input">
+    <span class="menu"> <span class="hamburger"></span> </span>
+    <ul>
+        <li> <span class="menu-header">Menu</span> </li>
+        <li> <a href="./index.html">- iOS Development</a> </li>
+        <li> <a href="./how-made.html">- How it's made</a> </li>
+    </ul>
+</label>
+
+<div class="timeline-container">
+    <div class="nav">
+        <div class="header">
+            <span class="title" style="color: white !important;">The Evolution</span>
+            <span class="subtitle" style="color: white !important;">iOS Development</span>
+        </div>
+    </div>
+    <section class="panel">
+
+        <div class="timeline">
+            <div class="wave">
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,700 C 0,700 0,140 0,140 C 91.25,137.17857142857144 182.5,134.35714285714286 319,142 C 455.5,149.64285714285714 637.25,167.75 778,160 C 918.75,152.25 1018.5,118.64285714285715 1122,111 C 1225.5,103.35714285714285 1332.75,121.67857142857142 1440,140 C 1440,140 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,700 C 0,700 0,280 0,280 C 135.28571428571428,293.7142857142857 270.57142857142856,307.42857142857144 399,293 C 527.4285714285714,278.57142857142856 649,235.99999999999994 755,242 C 861,248.00000000000006 951.4285714285713,302.5714285714286 1063,317 C 1174.5714285714287,331.4285714285714 1307.2857142857142,305.71428571428567 1440,280 C 1440,280 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,700 C 0,700 0,420 0,420 C 129.8214285714286,404.3571428571429 259.6428571428572,388.7142857142857 386,403 C 512.3571428571428,417.2857142857143 635.2499999999998,461.50000000000006 741,469 C 846.7500000000002,476.49999999999994 935.3571428571429,447.2857142857142 1049,433 C 1162.642857142857,418.7142857142858 1301.3214285714284,419.3571428571429 1440,420 C 1440,420 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,700 C 0,700 0,560 0,560 C 145.60714285714286,547.6785714285714 291.2142857142857,535.3571428571429 398,543 C 504.7857142857143,550.6428571428571 572.7499999999999,578.25 700,574 C 827.2500000000001,569.75 1013.7857142857144,533.6428571428572 1147,526 C 1280.2142857142856,518.3571428571428 1360.1071428571427,539.1785714285713 1440,560 C 1440,560 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="#3c3c3c" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+            </div>
+            <div class="timeline-item">
+                <div class="year">1996</div>
+                <div class="timeline-data line-0">
+                    <div class="header">
+                        Acquiring Objective-C
+                    </div>
+                    <div class="description">
+                        Apple Inc. acquires Objective-C; the primary programming language used to build the initial iPhone Operating System (iOS)
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2007</div>
+                <div class="timeline-data line-1">
+                    <div class="header">
+                        Start of the iPhone
+                    </div>
+                    <div class="description">
+                        iOS is a mobile operating system developed by Apple Inc. It was first released as iPhone OS in June 2007.
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2008</div>
+                <div class="timeline-data line-2">
+                    <div class="header">
+                        UIKit Release
+                    </div>
+                    <div class="description">
+                        UIKit, the most popular way of creating the user interface of iOS apps gets released to the public
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2014</div>
+                <div class="timeline-data line-3">
+                    <div class="header">
+                        Swift Release
+                    </div>
+                    <div class="description">
+                        Swift is released to replace Objective-C and to be the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2019</div>
+                <div class="timeline-data line-4">
+                    <div class="header">
+                        SwiftUI Release
+                    </div>
+                    <div class="description">
+                        Apple introduced SwiftUI in 2019 and the framework has been evolving at a rapid pace ever since. Unlike UIKit and AppKit, SwiftUI is a cross-platform framework. With SwiftUI, Apple offers developers a solution for rapidly building applications.
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2023+</div>
+                <div class="timeline-data">
+                    <div class="header">
+                        Future of iOS 👀
+                    </div>
+                    <div class="description">
+                        Only time will tell
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel" style="width: 0"></section>
+</div>
+
+<!-- Event Driven Section -->
+<div class="section event-section" id="event_driven" style="padding-top: 13em">
+    <div class="nav">
+        <div class="header">
+            <span class="title">Event Driven</span>
+            <span class="subtitle">iOS Development</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="event-driven text">
+            <span>Event-driven programming is a programming paradigm in which the flow of a program is determined by events, such as user input or system notifications. In event-driven programs, the program typically begins by setting up event listeners, which are functions that are called in response to a specific event. When an event occurs, the program's event listeners are triggered and the appropriate code is executed.</span>
+            <span class="help">* Interact with the phone!</span>
+        </div>
+        <div class="event-driven phone">
+
+            <div class="phone-content">
+                <div class="welcome-text">
+                    <span style="font-weight: bold">welcome back,</span>
+                    <span>sign into your account</span>
+                </div>
+                <div class="field">
+                    <span>email</span>
+                    <input type="text" id="email-field"/>
+                </div>
+                <div class="field">
+                    <span>password</span>
+                    <input type="password" id="password-field"/>
+                </div>
+                <div style="height: 50%">
+
+                </div>
+                <button onclick="runCode()">
+                    Tap Me!
+                </button>
+            </div>
+            <img src="assets/phone.png"/>
+        </div>
+<!--        macho-->
+        <div class="event-driven code-console">
+            <div class="code">
+                <span id="first"><span class="keyword">func</span> <span class="variable">onLoginClicked</span>() {</span>
+                <span class="indented comment">// Grab text from fields</span>
+                <span class="indented" id="second"><span class="keyword">let</span> <span class="variable">email</span> = emailTextField<span class="variable">.text</span><span class="nullable">!</span><span class="comment">// email</span></span>
+                <span class="indented" id="third"><span class="keyword">let</span> <span class="variable">password</span> = passwordTextField<span class="variable">.text</span><span class="nullable">!</span><span class="comment">// password</span></span>
+                <span class="empty-line"></span>
+                <span class="indented comment">// Login (some external function somewhere else)</span>
+                <span class="indented" id="fourth">doSomethingWithLoginInfo(email, password)</span>
+                <span class="empty-line"></span>
+                <span class="indented comment">// Print welcome :)</span>
+                <span class="indented" id="fifth">print(<span class="string">"welcome \(email)!"</span>)</span>
+                <span>}</span>
+            </div>
+            <div class="console" id="console">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- UI Section -->
+<div class="section">
+    <div class="nav">
+        <div class="header">
+            <span class="title">User Interface</span>
+            <span class="subtitle">iOS Development</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="user-interface text">
+            <span>Both iOS and Android have their own unique user interface that is designed to make it easy for users to interact with their devices.</span>
+            <span class="user-interface help">* Hover over the circles to the right for more info on each element!</span>
+            <a href="./how-made.html">How's it made?</a>
+        </div>
+        <div class="user-interface fake-phones-container">
+            <div class="pulsating-circle circle1"></div>
+            <div class="tooltip" id="tooltip1">
+                <span style="font-size: 20px; font-weight: bold">Title Positioning</span>
+                <span>iOS centers their titles in the navigation bar while Android aligns to the left</span>
+            </div>
+            <div class="pulsating-circle circle2"></div>
+            <div class="tooltip" id="tooltip2">
+                <span style="font-size: 20px; font-weight: bold">Fonts</span>
+                <span>iOS uses SF (San Francisco) while Android utilizes Roboto</span>
+            </div>
+            <div class="pulsating-circle circle3"></div>
+            <div class="tooltip" id="tooltip3">
+                <span style="font-size: 20px; font-weight: bold">Cards</span>
+                <span>When designing cards, iOS keeps it simple with rounded corners while
+                    Android does not round corners and adds a drop shadow.
+                </span>
+            </div>
+            <div class="pulsating-circle circle4"></div>
+            <div class="tooltip" id="tooltip4">
+                <span style="font-size: 20px; font-weight: bold">Icons</span>
+                <span>iOS and Android use a different icon set. iOS opts in to use more rounded icons while Android sticks to "squared" icons
+                </span>
+            </div>
+            <div class="pulsating-circle circle5"></div>
+            <div class="tooltip" id="tooltip5">
+                <span style="font-size: 20px; font-weight: bold">Buttons</span>
+                <span>iOS keeps their button simple with a filled version and a "just text" version while Android uses similar methods to their cards but has a outlined version. Material Design also tends to keep buttons capitalized.
+                </span>
+            </div>
+            <div class="fake-phone">
+                <div class="fake-nav-bar-ios">
+                    <span>Title</span>
+                </div>
+                <span class="font-ios">San Francisco</span>
+                <div class="boxes">
+                    <div class="ios-box box1"></div>
+                    <div class="ios-box box2"></div>
+                    <div class="ios-box box3"></div>
+                </div>
+                <div class="ios-icons" style="width: 100%; padding-left: 40px;">
+                    <img src="assets/ios-icons.svg" alt="ios icons" style="width: 30%;">
+                </div>
+                <div class="buttons" style="margin-top: -15px">
+                    <div class="ios-button">
+                        Button
+                    </div>
+                    <div class="ios-button-alt">
+                        Button
+                    </div>
+                </div>
+                <span class="fake-phone-title">iOS</span>
+            </div>
+            <div class="fake-phone">
+                <div class="fake-nav-bar-android">
+                    <span>Title</span>
+                </div>
+                <span class="font-ios">Roboto</span>
+                <div class="boxes">
+                    <div class="android-box box1"></div>
+                    <div class="android-box box2"></div>
+                    <div class="android-box box3"></div>
+                </div>
+                <div class="ios-icons" style="width: 100%; padding-left: 40px; height: 30px;">
+                    <img src="assets/android-icons.svg" alt="android icons" style="width: 20%;">
+                </div>
+                <div class="buttons">
+                    <div class="android-button">
+                        BUTTON
+                    </div>
+                    <div class="android-button-alt">
+                        BUTTON
+                    </div>
+                </div>
+                <span class="fake-phone-title">Android</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+
+
+
+</html>

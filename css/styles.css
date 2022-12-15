@@ -1,0 +1,157 @@
+:root {
+    /*  Colors  */
+    --primaryColor: #193846;
+    --secondaryColor: #4D5F63;
+    --keywordColor: #BC5429;
+    --backgroundOffColor: #FBF6E7;
+    --variableColor: #519F98;
+    --stringColor: #89982E;
+    --commentColor: #5C6D74;
+    --codeColor: #869496;
+    --nullableColor: #6D71BE;
+    --fakePhoneGray: #EDEDED;
+    /*  Weights  */
+    --blackWeight: 900;
+    --extraBoldWeight: 800;
+    --boldWeight: 700;
+    --semiBoldWeight: 600;
+    --mediumWeight: 500;
+    --regularWeight: 400;
+    --lightWeight: 300;
+    --extraLightWeight: 200;
+    --thinWeight: 100;
+    /* Sizes */
+    --titleSize: 70px;
+    --subTitleSize: 40px;
+    --textSize: 30px;
+}
+
+* {
+    font-family: degular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.event-section {
+    background-color: #FCF6E5;
+}
+
+.section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav > .header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header > .title {
+    font-size: var(--titleSize);
+    color: var(--primaryColor);
+    transition: font 0.3s ease;
+    font-family: macho, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header > .subtitle {
+    font-size: var(--subTitleSize);
+    color: var(--secondaryColor);
+    font-family: fairplex-wide, serif;
+    font-weight: 400;
+}
+
+.code-console {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.code {
+    height: 50%;
+    width: 100%
+}
+
+.console {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+}
+
+.welcome-screen {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #252525;
+    color: white;
+}
+
+.welcome-screen-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20rem;
+    font-size: 29px;
+}
+
+.welcome-screen > button {
+    background: var(--backgroundOffColor);
+    color: black;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+}
+
+.welcome-screen > button:hover {
+    cursor: pointer;
+    opacity: 90%;
+}

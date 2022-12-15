@@ -1,0 +1,119 @@
+.small-nav {
+    position: fixed;
+    z-index: 100;
+    padding: 20px;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.small-nav > .header > .title {
+    font-size: 30px;
+}
+
+.small-nav > .header > .subtitle {
+    display: none;
+}
+
+.swiftnavelements {
+    display: flex;
+}
+
+.move-up {
+    top: -100px;
+
+}
+
+.temp {
+    margin-left: -100%;
+    opacity: 0;
+}
+
+.swiftui-nav {
+    position: sticky;
+}
+
+.sticky-nav {
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    top: 0;
+}
+
+#uikit_storyboard {
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-help {
+    width: 50%;
+    height: 100%;
+    position: static;
+    top: 0;
+    right: 0;
+    background-color: gray;
+}
+
+.info-boxes {
+    margin-top: 250px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8.0px 16.0px 16.0px hsla(0, 0%, 0%, 0.13);
+    opacity: 50%;
+}
+
+.info-box.active {
+    background-color: var(--backgroundOffColor);
+    opacity: 100%;
+}
+
+.info-box.active > .status {
+    background-color: var(--primaryColor);
+}
+
+.info-box.active > .info-content > .info-header {
+    color: var(--primaryColor);
+}
+
+.info-box.active > .info-content > .info-text {
+    color: black;
+}
+
+.info-box > .status {
+    width: 30px;
+    height: 100%;
+    background-color: gray;
+}
+
+.info-box > .info-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.info-header {
+    font-size: 25px;
+    color: gray;
+}
+
+.info-text {
+    color: gray;
+}

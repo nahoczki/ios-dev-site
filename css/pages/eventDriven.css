@@ -1,0 +1,107 @@
+.phone {
+    width: 60%
+}
+
+.event-driven.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    font-size: var(--textSize);
+    line-height: 35px;
+/*    change line height */
+}
+
+.phone-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 550px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.field > span {
+    font-size: 12px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.phone-content > button {
+    background: var(--secondaryColor);
+    color: white;
+    border:none;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.phone-content > button:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+}
+
+.code > span {
+    font-family: Menlo, sans-serif;
+    color: var(--codeColor);
+}
+
+span.keyword {
+    color: var(--keywordColor);
+    font-family: Menlo, sans-serif;
+}
+
+span.variable {
+    color: var(--variableColor);
+    font-family: Menlo, sans-serif;
+}
+
+span.nullable {
+    color: var(--nullableColor);
+    font-family: Menlo, sans-serif;
+}
+
+
+span.string {
+    color: var(--stringColor);
+    font-family: Menlo, sans-serif;
+}
+
+.highlighted-yellow {
+    background-color: yellow;
+}
+
+.code > .comment {
+    font-style: italic;
+    color: var(--commentColor);
+}
+
+.code > .empty-line {
+    height: 20px;
+}
+
+.code > .indented {
+    margin-left: 20px;
+}

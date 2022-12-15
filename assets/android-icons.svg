@@ -1,0 +1,7 @@
+<svg id="Component_3_1" data-name="Component 3 – 1" xmlns="http://www.w3.org/2000/svg" width="70" height="27" viewBox="0 0 70 27">
+  <path id="Icon_material-arrow_back" data-name="Icon material-arrow_back" d="M30,16.5H11.745L20.13,8.115,18,6,6,18,18,30l2.115-2.115L11.745,19.5H30Z" transform="translate(-6 -4.5)"/>
+  <g id="Icon_material-camera-alt" data-name="Icon material-camera-alt" transform="translate(37 -3)">
+    <path id="Path_1" data-name="Path 1" d="M22.8,18A4.8,4.8,0,1,1,18,13.2,4.8,4.8,0,0,1,22.8,18Z"/>
+    <path id="Path_2" data-name="Path 2" d="M13.5,3,10.755,6H6A3.009,3.009,0,0,0,3,9V27a3.009,3.009,0,0,0,3,3H30a3.009,3.009,0,0,0,3-3V9a3.009,3.009,0,0,0-3-3H25.245L22.5,3ZM18,25.5A7.5,7.5,0,1,1,25.5,18,7.5,7.5,0,0,1,18,25.5Z"/>
+  </g>
+</svg>
