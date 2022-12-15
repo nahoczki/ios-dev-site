@@ -139,6 +139,7 @@ img {
     gap: 20px;
     padding: 20rem;
     font-size: 29px;
+    line-height: 40px;
 }
 
 .welcome-screen > button {

@@ -199,6 +199,13 @@
     transition: all 0.2s ease-in;
 }
 
+.tooltip > .title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: fairplex-wide, serif;
+    color: var(--secondaryColor);
+}
+
 .tooltip > span {
     width: 230px;
 }
