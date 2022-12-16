@@ -6,6 +6,8 @@
 }
 
 .timeline-container > .nav {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 15%;
     padding: 20px;
